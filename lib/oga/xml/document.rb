@@ -54,6 +54,13 @@ module Oga
         end
       end
 
+      # Returns copy of self and all children.
+      def dup
+        new_document=self.class.new
+        new_document.children = children.map(&:dup)
+        new_document
+      end
+
       # Returns self.
       #
       # This method exists to make this class compatible with Element, which in

@@ -57,6 +57,12 @@ module Oga
         end
       end
 
+      def dup
+        new_node=self.class.new
+        new_node.children = children.map(&:dup)
+        new_node
+      end
+
       # Returns the parent node of the current node. If there is no parent node
       # `nil` is returned instead.
       #

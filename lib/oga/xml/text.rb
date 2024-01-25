@@ -39,6 +39,13 @@ module Oga
 
         node && html? && node.literal_html_name?
       end
+
+      def dup
+        new_node=self.class.new
+        new_node.inner_text = text
+        new_node
+      end
+
     end # Text
   end # XML
 end # Oga

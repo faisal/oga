@@ -361,6 +361,12 @@ module Oga
 
         name_matches && ns_matches
       end
+
+      def dup
+        new_node=self.class.new
+        new_node.attributes = attributes
+        new_node
+      end
     end # Element
   end # XML
 end # Oga
