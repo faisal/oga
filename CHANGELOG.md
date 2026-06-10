@@ -3,6 +3,12 @@
 This document contains details of the various releases and their release dates.
 Dates are in the format `yyyy-mm-dd`.
 
+## 3.5 - 2026-06-10
+
+- [Fix ruby 3.4 future frozen string warning](https://github.com/yorickpeterse/oga/pull/187)
+- [Use typed data APIs for Ruby 4.1](https://github.com/yorickpeterse/oga/pull/188)
+- [Update ruby-ll to 2.2](https://github.com/yorickpeterse/oga/commit/cff8a92654d83cfeadc90a8944c8432372ea1e71)
+
 ## 3.4 - 2022-08-02
 
 This release includes a change that when setting the child nodes of a node A,
